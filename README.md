@@ -118,6 +118,7 @@ Son olarak bu komut ile Traefik konteynırımızı oluşturuyoruz.
 
 ```bash
 docker run -d \
+  --restart=always \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v $PWD/traefik.toml:/traefik.toml \
   -v $PWD/traefik_dynamic.toml:/traefik_dynamic.toml \
