@@ -151,9 +151,9 @@ services:
     container_name: service_container_name
     restart: always
     labels:
-      - traefik.http.routers.your_router.rule=Host(`service.your_domain`)
-      - traefik.http.routers.your_router.tls=true
-      - traefik.http.routers.your_router.tls.certresolver=lets-encrypt
+      - traefik.http.routers.YOUR_ROUTER_NAME.rule=Host(`service.your_domain`)
+      - traefik.http.routers.YOUR_ROUTER_NAME.tls=true
+      - traefik.http.routers.YOUR_ROUTER_NAME.tls.certresolver=lets-encrypt
       - traefik.port=80
     networks:
       - web
